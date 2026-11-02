@@ -1,0 +1,27 @@
+# Local Student Profile (Private & Configurable)
+student_profile.json
+
+# Generated Documents & Output
+output/
+*.docx
+*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Obsidian local workspace settings (keeps custom plugins/themes if any, ignores local tab states)
+.obsidian/workspace*
+.obsidian/graph*
+.obsidian/starred*
+.obsidian/recent*
+
+# OS specific
+.DS_Store
+Thumbs.db

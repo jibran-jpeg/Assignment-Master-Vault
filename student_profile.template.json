@@ -1,0 +1,12 @@
+{
+  "student_name": "Jane Doe",
+  "student_id": "2024-CS-001",
+  "degree_program": "Bachelor of Science in Computer Science (BS CS)",
+  "current_standing": "Senior Year / 6th Semester",
+  "class_section": "BSCS-6B",
+  "institution_name": "Faculty of Computing & Information Technology",
+  "campus_name": "Main Campus",
+  "campus_code": "FCIT-MAIN",
+  "department": "Department of Computer Science",
+  "output_dir": "./output"
+}
