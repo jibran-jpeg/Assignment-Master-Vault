@@ -40,9 +40,17 @@ When university students use standard LLMs (ChatGPT, Claude, Copilot) to help wr
 
 **Assignment Master Vault eliminates 100% of these giveaways.**
 
+<p align="center">
+  <img src="assets/visual_comparison.png" alt="Visual Document Standards Comparison" width="100%">
+</p>
+
 ---
 
 ## 🛡️ Features at a Glance
+
+<p align="center">
+  <img src="assets/workflow_pipeline.png" alt="Assignment Engine Pipeline Workflow" width="100%">
+</p>
 
 * **Zero AI Footprint (Humanized Burstiness):** Calibrates text perplexity and sentence variety to read like an authentic senior undergraduate engineer.
 * **Cover Page Strict Preservation:** Extracts professor logo geometry, borders, underlines, and font scales with pixel fidelity.
