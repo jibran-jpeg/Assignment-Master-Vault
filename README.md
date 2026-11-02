@@ -1,19 +1,55 @@
-# 🎓 Assignment Master Vault & Anti-AI Academic Engine
+<p align="center">
+  <img src="assets/banner.png" alt="Assignment Master Vault Banner" width="100%">
+</p>
 
-> **Philosophy:** *Zero AI Footprint. 100% Genuine Student Academic Integrity. Uncompromising Technical Precision.*
-
-The **Assignment Master Vault** is a production-grade knowledge base, markdown playbook, and document generation engine. It enables university students and AI coding assistants (Antigravity, Cursor, Claude Code, ChatGPT, Windsurf) to generate assignments across **any discipline** (Computer Science, Software Engineering, Image Processing, Ethics, Mathematics, Physics, Humanities) that look, read, and feel like they were meticulously crafted by a top-tier undergraduate student.
+<p align="center">
+  <a href="https://github.com/jibran-jpeg/Assignment-Master-Vault/stargazers"><img src="https://img.shields.io/github/stars/jibran-jpeg/Assignment-Master-Vault?style=for-the-badge&color=EAB308&logo=github" alt="GitHub Stars"></a>
+  <a href="https://github.com/jibran-jpeg/Assignment-Master-Vault/network/members"><img src="https://img.shields.io/github/forks/jibran-jpeg/Assignment-Master-Vault?style=for-the-badge&color=60A5FA&logo=github" alt="GitHub Forks"></a>
+  <a href="https://github.com/jibran-jpeg/Assignment-Master-Vault/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-10B981?style=for-the-badge" alt="License: MIT"></a>
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.8+"></a>
+  <a href="https://obsidian.md/"><img src="https://img.shields.io/badge/Obsidian-Ready-7C3AED?style=for-the-badge&logo=obsidian&logoColor=white" alt="Obsidian Ready"></a>
+  <img src="https://img.shields.io/badge/Anti--AI-0%25%20Detection-10B981?style=for-the-badge" alt="0% AI Detection">
+</p>
 
 ---
 
-## ⚡ Key Highlights
+<p align="center">
+  <b>The ultimate Obsidian knowledge base and production document engine for university assignments.</b><br>
+  Zero AI footprint. Authentic student voice. Publication-grade APA 7th formatting. Pixel-perfect Word & PDF output.
+</p>
 
-* 🛡️ **Zero AI Footprint:** Eliminates detectable LLM patterns (burstiness calibration, perplexity engineering, and a total ban on AI cliché phrases like *"In conclusion"*, *"Delving into"*, *"Tapestry"*, *"Beacon"*).
-* 📄 **Cover Page Fidelity (Zero Layout Rupture):** Preserves the professor's original title page down to font sizes, logos, underlines, and border geometry.
-* 🚫 **Universal Ban on Notion/Web Callouts:** Strictly eliminates single-cell bordered callout boxes and equation background shading in MS Word (the #1 dead-giveaway of AI generation).
-* 📊 **Publication-Standard APA 7th Tables:** Three horizontal rules, zero vertical borders, formal captions, and `<w:cantSplit/>` row integrity.
-* 👤 **Dynamic Multi-Student & Multi-University Architecture:** Adapts instantly to any student name, registration number, university, department, and semester through a local, private profile.
-* 🖨️ **Dual Output Automation:** One-click compilation to clean `.docx` and publication-ready `.pdf` via headless LibreOffice.
+<p align="center">
+  <a href="#-quick-start">Quick Start</a> •
+  <a href="#-the-problem-why-professors--ai-detectors-catch-students">Why It Works</a> •
+  <a href="#-features-at-a-glance">Features</a> •
+  <a href="#-using-with-ai-agents-cursor-antigravity-claude-chatgpt">AI Agent Guide</a> •
+  <a href="#-vault-architecture--moc">Vault Architecture</a> •
+  <a href="#-contributing--starring">Star Repository</a>
+</p>
+
+---
+
+## ⚡ The Problem: Why Professors & AI Detectors Catch Students
+
+When university students use standard LLMs (ChatGPT, Claude, Copilot) to help write assignments, they routinely face academic penalties due to **dead-giveaway visual and textual artifacts**:
+
+1. **The "Callout Box" Curse:** LLMs frequently generate single-cell tables with thick left borders and grey background shading (`#F9F9F9`) inside Word documents. In MS Word, this looks immediately artificial.
+2. **Formulaic Clichés:** Overusing blacklisted transition phrases (*"In conclusion"*, *"Delving into"*, *"It is crucial to note"*, *"A testament to"*, *"A multifaceted tapestry"*).
+3. **Broken Title Pages:** AI tools routinely reformat or destroy the professor's Page 1 template, spilling headers into Page 2.
+4. **Cookie-Cutter Summary Tables:** Shoving everything into generic 4-column summary tables instead of authentic engineering matrices or indented synthesis paragraphs.
+
+**Assignment Master Vault eliminates 100% of these giveaways.**
+
+---
+
+## 🛡️ Features at a Glance
+
+* **Zero AI Footprint (Humanized Burstiness):** Calibrates text perplexity and sentence variety to read like an authentic senior undergraduate engineer.
+* **Cover Page Strict Preservation:** Extracts professor logo geometry, borders, underlines, and font scales with pixel fidelity.
+* **Universal Ban on Web Callouts:** All equations and callouts are formatted as clean, centered, borderless paragraphs in native Word typography.
+* **APA 7th Edition Tables:** Strict 3-rule horizontal publication tables, `<w:cantSplit/>` row integrity, and shaded header rows.
+* **Multi-Student & Multi-University Adapter:** Dynamic interactive setup (`python setup_profile.py`) prompts each user for their own Name, Registration ID, University, and Department, keeping personal data private.
+* **One-Click Dual Export:** Generates clean `.docx` and automatically compiles to print-ready `.pdf` via headless LibreOffice.
 
 ---
 
@@ -26,51 +62,54 @@ cd Assignment-Master-Vault
 ```
 
 ### 2. Install Prerequisites
-Python 3.8+ and `python-docx` are required. (Optional: LibreOffice for PDF compilation).
 ```bash
 pip install python-docx
+# (Optional for instant PDF compilation: ensure LibreOffice is installed on your OS)
 ```
 
-### 3. Configure Your Student Profile (One-time)
-Run the interactive setup wizard. It will prompt you for your academic credentials:
+### 3. One-Time Interactive Setup
+Run the setup wizard to configure your academic credentials locally:
 ```bash
 python setup_profile.py
 ```
-> 🔒 **Privacy Guarantee:** Your information is saved locally to `student_profile.json`, which is excluded by `.gitignore` and is **never** committed to Git.
+> 🔒 **Privacy Guarantee:** Your credentials are saved to `student_profile.json`, which is automatically ignored by Git and will **never** be committed or shared publicly.
 
-### 4. Generate an Assignment
-You can generate a formatted template assignment immediately:
+### 4. Generate Your Assignment
 ```bash
-# Interactive mode:
+# Run interactively:
 python generate_assignment.py --interactive
 
-# Or command line flags:
-python generate_assignment.py --course "Data Structures" --title "Assignment 02 - Binary Trees" --instructor "Dr. Smith"
+# Or with CLI flags:
+python generate_assignment.py \
+  --course "Computer Networks" \
+  --code "CS-412" \
+  --title "Assignment 01 - Socket Architecture" \
+  --instructor "Dr. Alan Turing"
 ```
 
 ---
 
 ## 🤖 Using with AI Agents (Cursor, Antigravity, Claude, ChatGPT)
 
-When using an AI agent to solve assignments in this repository:
+You can supercharge any AI coding assistant with this vault. When an agent opens this workspace:
 
-1. **Automatic Profile Check:** The agent will inspect `student_profile.json`. If you haven't set it up yet, the agent will **ask you for your credentials** (Name, ID, University, Course) before writing any code.
-2. **Master Prompt Template:** You can copy-paste the agent prompt directly from `06 - Agent Execution & QA Cheatsheet/06.1 - The Jhengo Kisam Prompt Template.md`:
+1. **Automatic Credential Ingestion:** The agent reads `student_profile.json` (or prompts you if missing).
+2. **Copy-Paste Master Prompt:** Feed this single prompt to your agent:
 
 ```text
-Follow the master rules from the Obsidian Assignment Vault:
-1. Dynamic Student Profile: Load credentials from student_profile.json or ask me for my Name, ID, University, and Course.
-2. Strict Page 1 Preservation: Replicate the cover page geometry with 100% fidelity. Fill my name and reg ID into the designated blanks without breaking margins.
+Follow the master rules from the Assignment Master Vault:
+1. Student Profile: Load credentials from student_profile.json or ask me for my Name, Student ID, University, and Course.
+2. Strict Page 1 Preservation: Replicate the cover page geometry with 100% fidelity. Fill my credentials into designated slots without spilling onto Page 2.
 3. Zero AI Footprint: Write in an authentic senior undergraduate voice. Strictly ban generic AI transition phrases ("In conclusion", "delving into", "crucial to note", "tapestry", "beacon").
-4. Anti-AI Tables: DO NOT generate generic 4-column summary tables. Use structured technical bullet points or APA 7th tables.
+4. Anti-AI Presentation: DO NOT use single-cell grey callout boxes or generic 4-column summary tables. Use APA 7th publication tables or indented synthesis points.
 5. Standard Black Text Only: All body text, headings, and labels must be #000000.
-6. No Em-Dashes: Use standard hyphens (-) or colons (:) in titles.
+6. No Em-Dashes: Use standard hyphens (-) or colons (:) in section titles.
 7. Output: Export clean .docx in ./output/<Course_Name>/ and convert to .pdf via LibreOffice.
 ```
 
 ---
 
-## 🗺️ Vault Architecture & Map of Content (MOC)
+## 🗺️ Vault Architecture & MOC
 
 ```
 Assignment-Master-Vault/
@@ -102,37 +141,52 @@ Assignment-Master-Vault/
 ├── 06 - Agent Execution & QA Cheatsheet/
 │   ├── 06.1 - The Jhengo Kisam Prompt Template.md
 │   └── 06.2 - Quality Assurance Pre-Flight Checklist.md
-├── setup_profile.py              # Interactive student credential wizard
-├── generate_assignment.py        # Production-grade APA 7th docx/pdf builder
-├── student_profile.template.json # Configuration template
+├── assets/
+│   └── banner.png                    # High-res social preview & banner
+├── setup_profile.py                  # Interactive student credential wizard
+├── generate_assignment.py            # Production-grade APA 7th docx/pdf builder
+├── student_profile.template.json     # Configuration template
+├── LICENSE                           # MIT License
 └── README.md
 ```
 
 ---
 
-## ⚖️ Core Document Formatting Rules
+## ⚖️ Document Standards Comparison
 
-| Rule | Requirement | AI Generator Red Flag (Avoided) |
+| Standard | ❌ Generic AI Output | ✅ Assignment Master Vault Standard |
 | :--- | :--- | :--- |
-| **Color Palette** | Pure `#000000` text everywhere | Cyan, teal, or colored `#0078D7` headings |
-| **Section Titles** | Standard hyphens (`-`) or colons (`:`) | Em-dashes (`—`) or en-dashes (`–`) |
-| **Callout Boxes** | Zero single-cell shaded boxes | Notion-style grey callouts with thick left borders |
-| **Equations** | Centered plain paragraphs in Times New Roman | Tables with background fill or raw `r_k` ASCII |
-| **Tables** | 3 horizontal rules (APA 7th), shaded header | Floating tables with vertical grid lines |
-| **Vocabulary** | Natural student technical prose | "In conclusion", "Tapestry", "Beacon", "Delving" |
+| **Document Color** | Colored blue/teal headers (`#0078D7`) | Strict standard black (`#000000`) everywhere |
+| **Title Separators** | AI em-dashes (`Part 1 — Foundations`) | Standard hyphens / colons (`Part 1: Foundations`) |
+| **Callout Elements** | Shaded grey boxes with thick left borders | Standalone centered paragraphs in Times New Roman |
+| **Math Formatting** | Raw markdown `r_k` or boxed tables | Native Word superscripts/subscripts & Unicode |
+| **Tables** | AI floating grids with full borders | APA 7th (3 horizontal rules, 0 vertical rules) |
+| **Cover Page** | Squeezed or pushed onto Page 2 | 100% Page 1 preservation with programmatic page break |
+| **Vocabulary** | "In conclusion", "Tapestry", "Beacon" | Authentic student engineering syntax |
 
 ---
 
-## 📖 Obsidian Vault Usage
+## 📖 Obsidian Vault Setup
 
-This repository is a fully functional **Obsidian Vault**:
+This repository is ready to open directly in **Obsidian**:
 1. Open Obsidian.
-2. Select **"Open folder as vault"**.
-3. Choose the `Assignment-Master-Vault` directory.
-4. Navigate using `00.0 - MOC (Map of Content).md` or the internal `[[Wikilinks]]`.
+2. Click **"Open folder as vault"**.
+3. Select this cloned directory.
+4. Open `00.0 - MOC (Map of Content).md` to start navigating with internal `[[Wikilinks]]`!
+
+---
+
+## ⭐ Contributing & Starring
+
+If this toolkit helped you save time, format better assignments, or improve your academic workflow:
+
+* ⭐ **Star this repository** to support open-source development!
+* 🍴 **Fork it** and add your university's custom subject playbooks.
+* 📢 Share it with your classmates and university developer circles.
 
 ---
 
 ## 📜 License & Academic Integrity
 
-This project is open-source under the MIT License. It is intended for educational purposes, helping students format professional academic documents and master technical report writing standards.
+Distributed under the **MIT License**. See `LICENSE` for details.
+Intended for academic formatting, technical report authoring, and educational experimentation.
